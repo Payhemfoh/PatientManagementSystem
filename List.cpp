@@ -24,7 +24,6 @@ bool List::add(Node* n) {
 			this->tail = n;
 		}
 		++length;
-		std::cout << length << std::endl;
 	}
 	catch (...) {
 		result = false;

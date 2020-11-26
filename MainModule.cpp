@@ -61,7 +61,7 @@ void MainModule::mainProcess(int input) {
 	case 4:
 	{
 		if (patientList->isEmpty() || doctorList->isEmpty()) {
-			std::cout << "You cannot enter payment module without patient or doctor data." << std::endl;
+			std::cout << "You cannot enter diagnostic module without patient or doctor data." << std::endl;
 		}
 		else {
 			DiagnosticModule dm(doctorList, patientList, medicineList);

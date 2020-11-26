@@ -14,7 +14,7 @@ int Payment::getId() { return id; }
 void Payment::setId(int id) { this->id = id; }
 
 string Payment::getPatientName() { return patient_name; }
-void Payment::setPatientName(string patient_name) { patient_name = patient_name; }
+void Payment::setPatientName(string patient_name) { this->patient_name = patient_name; }
 
 string Payment::getDate(){ return date;}
 void Payment::setDate(string date) { this->date = date; }

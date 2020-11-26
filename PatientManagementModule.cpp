@@ -276,7 +276,7 @@ void PatientManagementModule::removeGuardian()
                 switch (confirm) {
                 case 'y':
                 case 'Y':
-                    patientList->remove(index - 1);
+                    guardianList->remove(index - 1);
                     std::cout << "The record has been removed." << std::endl;
                     invalid = false;
                     break;

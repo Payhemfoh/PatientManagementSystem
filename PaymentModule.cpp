@@ -47,7 +47,7 @@ void PaymentModule::makePayment() {
 		}
 		else if (index > 0 && index <= PATIENTSIZE) {
 			int id = InputModule::getIntegerInput("Enter Payment Id : ");
-			Patient* patient = dynamic_cast<Patient*>(patientList->get(index));
+			Patient* patient = dynamic_cast<Patient*>(patientList->get(index-1));
 
 			std::string name = patient->getName();
 			double total_price = calculateTotalPrice(patient);

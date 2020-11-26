@@ -125,7 +125,9 @@ void DiagnosticModule::diagnose() {
 					
 					patient_ptr->setIllness(illness);
 					patient_ptr->setDoctorName(doctor_ptr->getName());
-					patient_ptr->setMedicine(medicine_ptr->getName());
+					if (medicine_ptr != nullptr) {
+						patient_ptr->setMedicine(medicine_ptr->getName());
+					}
 
 					std::cout << "Diagnose result entered sucessful" << std::endl;
 				}

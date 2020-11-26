@@ -30,11 +30,20 @@ char Guardian::getGender() { return gender;}
 void Guardian::setGender(char gender) { this->gender = gender; }
 
 void Guardian::print() {
-
+	cout << name << endl;
 }
 
 void Guardian::printDetail() {
+	string line(50, '-');
 
+	cout << line << endl;
+	cout << "Guardian ID : " << id << endl;
+	cout << "Guardian Name : " << name << endl;
+	cout << "Gender : " << gender << endl;
+	cout << "Address : " << address << endl;
+	cout << "Age : " << age << endl;
+	cout << "Contact No : " << contact << endl;
+	cout << line << endl;
 }
 
 std::string Guardian::toString() {

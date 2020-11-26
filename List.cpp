@@ -123,7 +123,7 @@ bool List::swap(int n1, int n2) {
 		head = node2;
 
 	if (node2 == tail)
-		tail == node1;
+		tail = node1;
 
 	//change the pointer before and after the node 1 to node 2
 	if (beforeNode1 != nullptr)

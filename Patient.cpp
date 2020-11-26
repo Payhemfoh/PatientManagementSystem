@@ -45,6 +45,20 @@ void Patient::print() {
 }
 
 void Patient::printDetail() {
+	using namespace std;
+
+	string line(50, '-');
+
+	cout << line << endl;
+	cout << "Patient ID : " << id << endl;
+	cout << "Patient Name : " << name << endl;
+	cout << "Age : " << age << endl;
+	cout << "Contact No : " << contact << endl;
+	cout << "Insurance : " << (insurance ? "Yes" : "No") << endl;
+	cout << "Illness Description : " << illness << endl;
+	cout << "Doctor Name : " << doctor_name << endl;
+	cout << "Medicine Name : " << medicine << endl;
+	cout << line << endl;
 
 }
 
